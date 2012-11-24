@@ -16,7 +16,7 @@ class Venue(obj: Node, context: Node) {
   
   def hasTag(tag: String) = tags.contains(tag)
   
-  def location = (obj.attribute("lat").get.first.text.toDouble, obj.attribute("lon").get.first.text.toDouble)
+  def location(): (Double, Double) = (obj.attribute("lat").get.first.text.toDouble, obj.attribute("lon").get.first.text.toDouble)
   
   // returns distance in metres
   def distanceFrom(lat: Double, long: Double) = {

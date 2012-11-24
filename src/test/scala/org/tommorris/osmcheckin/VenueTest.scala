@@ -15,6 +15,11 @@ class VenueSpec extends Specification {
     ven.hasTag("amenity") must beTrue
     ven.hasTag("name") must beTrue
   }
+
+  "it should return locations" should {
+    val ven = Venue((example \ "node")(0), example)
+    ven.location() must beEqualTo(Pair(51.5238028.toDouble, -0.1430911.toDouble))
+  }
 }
 
 // vim: set ts=2 sw=2 et:
