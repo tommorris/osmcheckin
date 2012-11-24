@@ -1,0 +1,416 @@
+Sunspel -- 9.571026788327893 metres
+	Map(building -> yes, name -> Sunspel, source -> Bing;photographic_survey, shop -> clothes)
+Leon -- 9.76867598047845 metres
+	Map(name -> Leon, source -> Bing;photographic_survey, addr:street -> Old Compton Street, addr:country -> GB, amenity -> restaurant, addr:housenumber -> 36-38, building -> yes, addr:city -> London, old_name -> Play2Win)
+The Vintage House -- 10.745172564047113 metres
+	Map(shop -> alcohol, name -> The Vintage House, source -> Bing;photographic_survey, addr:street -> Old Compton Street, addr:housenumber -> 42, building -> yes, phone -> +44 20 74372592)
+Amalfi -- 12.955797915415406 metres
+	Map(name -> Amalfi, amenity -> restaurant)
+Caffe Nero -- 15.72122298863337 metres
+	Map(name -> Caffe Nero, source -> Bing;photographic_survey, postcode -> W1D 4SQ, amenity -> cafe, building -> yes)
+Patisserie Valerie -- 15.858553128790053 metres
+	Map(shop -> patisserie, area -> yes, name -> Patisserie Valerie, source -> photograph, level -> 0)
+Opuz Kitchen -- 17.85172171809007 metres
+	Map(name -> Opuz Kitchen, addr:street -> Old Compton Street, amenity -> restaurant, addr:housenumber -> 17, cuisine -> mediterranean)
+Compton News -- 21.94062999662733 metres
+	Map(shop -> newsagent, area -> yes, name -> Compton News, source -> photograph, addr:street -> Old Compton Street, level -> 0)
+The Delhi Brasserie -- 22.040632586914313 metres
+	Map(name -> The Delhi Brasserie, source -> Bing;photographic_survey, amenity -> restaurant, building -> yes, cuisine -> indian)
+Pulcinella -- 25.323274539221647 metres
+	Map(name -> Pulcinella, amenity -> restaurant)
+Elcantara -- 27.884385224175368 metres
+	Map(building -> yes, name -> Elcantara, source -> Bing;photographic_survey, amenity -> restaurant)
+Costa -- 32.342247485648336 metres
+	Map(name -> Costa, amenity -> cafe)
+Soho, Frith Street -- 33.17404457128175 metres
+	Map(network -> Barclays Cycle Hire, construction -> yes, name -> Soho, Frith Street, amenity -> bicycle_rental, ref -> CH25055, capacity -> 18)
+Dodo -- 35.3448710493795 metres
+	Map(name -> Dodo, shop -> convenience)
+Ronnie Scott's -- 35.53156069352395 metres
+	Map(building -> yes, name -> Ronnie Scott's, source -> Bing;photographic_survey, amenity -> bar)
+Ku -- 36.41669220274342 metres
+	Map(website -> http://www.ku-bar.co.uk/, name -> Ku, addr:country -> GB, amenity -> bar, gay -> yes)
+French House -- 37.33637141605916 metres
+	Map(name -> French House, amenity -> restaurant)
+Frith Street -- 40.22559979432847 metres
+	Map(name -> Frith Street, oneway -> yes, highway -> unclassified)
+Ronnie Scotts Jazz Club -- 40.882278123287726 metres
+	Map(website -> http://www.ronniescotts.co.uk, name -> Ronnie Scotts Jazz Club, source -> Company website, addr:street -> Frith Street, addr:postcode -> W1D 4HT, media:commons -> https://commons.wikimedia.org/wiki/Category:Ronnie_Scott%27s_Jazz_Club, amenity -> bar, addr:housenumber -> 47)
+Dean Street -- 41.02049192378949 metres
+	Map(name -> Dean Street, oneway -> no, highway -> unclassified)
+Bashan -- 41.641651935790044 metres
+	Map(name -> Bashan, amenity -> restaurant)
+Balans Cafe -- 41.6502063103066 metres
+	Map(name -> Balans Cafe, source -> Bing;photographic_survey, addr:street -> Old Compton Street, postcode -> W1D 4UG, amenity -> cafe, addr:housenumber -> 34, building -> yes)
+Taste of Beijing -- 41.89568392823025 metres
+	Map(name -> Taste of Beijing, amenity -> restaurant)
+Gauthier -- 42.234248611869354 metres
+	Map(name -> Gauthier, amenity -> restaurant)
+Bar Italia -- 44.15229770013546 metres
+	Map(name -> Bar Italia, amenity -> cafe, note -> Open 24h, website -> http://www.baritaliasoho.co.uk)
+50 -- 44.2409935020813 metres
+	Map(shop -> clothes, name -> 50, addr:street -> Old Compton Street, addr:country -> GB, addr:housenumber -> 50, building -> yes, old_name -> DV8, gay -> yes)
+Bar Soho -- 45.66858014179519 metres
+	Map(name -> Bar Soho, amenity -> bar)
+Poncho No 8 -- 47.412386091538465 metres
+	Map(name -> Poncho No 8, source -> Bing;photographic_survey, amenity -> restaurant, building -> yes, cuisine -> mexican)
+Mooli's -- 47.805832058096776 metres
+	Map(website -> http://moolis.com, name -> Mooli's, addr:street -> Frith Street, addr:postcode -> w1d 4sq, amenity -> restaurant, takeaway -> yes, addr:housenumber -> 50, cuisine -> indian, wheelchair -> yes, phone -> 02074949075)
+Little Italy -- 48.19689493095688 metres
+	Map(website -> http://www.littleitalysoho.co.uk/, name -> Little Italy, addr:street -> Frith Street, postcode -> W1D 4RN, amenity -> restaurant, addr:housenumber -> 21, phone -> 0207 734 4737)
+Cafe-Creperie -- 48.60284177356105 metres
+	Map(name -> Cafe-Creperie, amenity -> cafe)
+Romilly Street -- 48.95099618071793 metres
+	Map(name -> Romilly Street, oneway -> yes, cycleway -> opposite, highway -> unclassified)
+Bistro1 -- 49.14514096859573 metres
+	Map(website -> http://www.bistro1.co.uk/, name -> Bistro1, addr:street -> Frith Street, addr:postcode -> W1D 5LE, amenity -> restaurant, addr:housenumber -> 27, cuisine -> mediterranean, wheelchair -> limited)
+Old Compton Street -- 49.994879509796704 metres
+	Map(name -> Old Compton Street, media:commons -> https://commons.wikimedia.org/wiki/Category:Old_Compton_Street, highway -> unclassified, wikipedia -> https://en.wikipedia.org/wiki/Old_Compton_Street, oneway -> yes)
+Algerian Coffee Stores -- 50.57808294761277 metres
+	Map(addr:housenumber -> 52, name -> Algerian Coffee Stores, addr:street -> Old Compton Street, shop -> coffee)
+LVPO -- 52.82173619713847 metres
+	Map(name -> LVPO, amenity -> restaurant)
+NAM -- 53.152303952095345 metres
+	Map(name -> NAM, amenity -> cafe, cuisine -> vietnamese)
+G-A-Y -- 55.39841872922063 metres
+	Map(website -> http://www.g-a-y.co.uk, name -> G-A-Y, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, amenity -> bar, addr:housenumber -> 30, building -> yes, postal_code -> W1D 4UR, gay -> yes)
+Kyoto -- 55.62114049981006 metres
+	Map(name -> Kyoto, amenity -> restaurant)
+Admiral Duncan -- 56.00281166124996 metres
+	Map(name -> Admiral Duncan, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, addr:country -> GB, postcode -> W1D 4UB, amenity -> pub, addr:housenumber -> 54, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Admiral_Duncan_pub, gay -> yes)
+Cay Tre -- 56.25708745164278 metres
+	Map(website -> www.caytresoho.co.uk, name -> Cay Tre, addr:street -> Dean Street, addr:postcode -> W1 4PZ, amenity -> restaurant, addr:housenumber -> 42-43, cuisine -> vietnamese, addr:city -> London, phone -> 02073179118)
+Karaoke Box -- 58.48002622328657 metres
+	Map(name -> Karaoke Box, addr:street -> Frith Street, amenity -> bar, addr:housenumber -> 18, wheelchair -> no)
+Golden Lion -- 60.02106136610936 metres
+	Map(name -> Golden Lion, amenity -> pub, created_by -> JOSM)
+Tuk Tuk -- 60.105389912789086 metres
+	Map(name -> Tuk Tuk, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, postcode -> W1D 4UE, amenity -> restaurant, addr:housenumber -> 56, building -> yes, cuisine -> chinese, wheelchair -> no, value -> cheap)
+Eat Tokyo -- 62.10527102452517 metres
+	Map(name -> Eat Tokyo, addr:street -> Romilly Street, amenity -> restaurant, addr:housenumber -> 27, phone -> 02074372262)
+Prime Focus -- 62.77456949138704 metres
+	Map(website -> http://www.primefocusgroup.com/, name -> Prime Focus, source -> Bing;photographic_survey, office -> company, building -> yes, wikipedia -> Prime_Focus_Group)
+Cafe Emm -- 64.04590801818902 metres
+	Map(name -> Cafe Emm, amenity -> restaurant)
+Barshu -- 64.48185832901554 metres
+	Map(name -> Barshu, amenity -> restaurant, phone -> 02072878822)
+Night &amp; Day -- 65.93062493970378 metres
+	Map(name -> Night &amp; Day, toilets -> yes, amenity -> pub, toilets:access -> customers)
+Halifax -- 67.91751320196566 metres
+	Map(name -> Halifax, amenity -> bank)
+Corniche -- 68.53999870085032 metres
+	Map(addr:housenumber -> 16, name -> Corniche, addr:street -> Frith Street, shop -> video)
+Bourchier Street -- 69.49241771016312 metres
+	Map(name -> Bourchier Street, oneway -> no, highway -> service, service -> alley)
+Prince Edward -- 72.94686626760897 metres
+	Map(website -> http://www.delfontmackintosh.co.uk/Theatres/prince_edward_theatre.php, name -> Prince Edward, addr:street -> Old Compton Street, amenity -> theatre, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Prince_Edward_Theatre, postal_code -> W1D 4HS)
+Gourmet Burger Kitchen -- 75.38046444221148 metres
+	Map(name -> Gourmet Burger Kitchen, addr:street -> Frith Street, amenity -> restaurant, addr:housenumber -> 15, wheelchair -> limited)
+Cafe Boheme -- 75.52243304977021 metres
+	Map(website -> http://www.cafeboheme.co.uk, name -> Cafe Boheme, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, amenity -> pub, addr:housenumber -> 13-17, toilets:access -> customers, toilets -> yes, postal_code -> W1D 5GQ)
+Subway -- 76.96553499752747 metres
+	Map(name -> Subway, amenity -> cafe)
+Dean Street -- 77.97390383928838 metres
+	Map(name -> Dean Street, oneway -> yes, highway -> unclassified)
+Kettner's -- 78.92965813550431 metres
+	Map(website -> http://www.kettners.com, name -> Kettner's, addr:street -> Romilly Street, amenity -> restaurant, addr:housenumber -> 29, postal_code -> W1D 5HP, wheelchair -> yes)
+Garlic &amp; Shots -- 82.05320997654101 metres
+	Map(name -> Garlic &amp; Shots, amenity -> restaurant)
+St Annes, Soho -- 82.52066172787596 metres
+	Map(name -> St Annes, Soho, amenity -> place_of_worship, denomination -> church_of_england, religion -> christian)
+Curzon Soho -- 85.62662712934176 metres
+	Map(website -> http://www.curzoncinemas.com, name -> Curzon Soho, addr:street -> Shaftesbury Avenue, amenity -> cinema, addr:housenumber -> 99, postal_code -> W1D 5DY)
+Pret A Manger -- 86.19365648710139 metres
+	Map(name -> Pret A Manger, amenity -> cafe, wheelchair -> limited)
+CZ Soho -- 87.94979276594869 metres
+	Map(name -> CZ Soho, source -> Bing;photographic_survey, addr:street -> Old Compton Street, addr:country -> GB, addr:housenumber -> 64, building -> yes, addr:city -> London, gay -> yes)
+Wingate House -- 88.77860680506876 metres
+	Map(building -> yes, name -> Wingate House, note -> Check exact building shape.)
+St Anne's Soho -- 89.5307629455987 metres
+	Map(created_by -> Potlatch 0.4a, name -> St Anne's Soho, amenity -> place_of_worship, denomination -> church_of_england, religion -> christian)
+Yming -- 91.12069298705923 metres
+	Map(website -> yminglondon.com, name -> Yming, addr:street -> Greek Street, addr:postcode -> W1D 5DL, amenity -> restaurant, addr:housenumber -> 35-36, phone -> 02077342721)
+Chinatown  Dean Street -- 92.2077662299538 metres
+	Map(local_ref -> W, name -> Chinatown  Dean Street, highway -> bus_stop, naptan:Indicator -> Stop W, naptan:AtcoCode -> 490006008W, naptan:CommonName -> Chinatown  Dean Street, naptan:Bearing -> S, naptan:verified -> no)
+Rushes -- 92.75306293662238 metres
+	Map(website -> http://www.rushes.co.uk/, name -> Rushes, source -> Bing;photographic_survey, addr:street -> Old Compton Street, addr:country -> GB, postcode -> W1D 4UH, addr:housenumber -> 66, building -> yes, addr:city -> London)
+Bay of Bengal -- 92.80729999319662 metres
+	Map(addr:housenumber -> 26, name -> Bay of Bengal, amenity -> restaurant, addr:street -> Greek Street)
+Franny's Popup -- 93.14436180735508 metres
+	Map(website -> http://twitter.com/frannys_soho, name -> Franny's Popup, addr:street -> Frith Street, amenity -> restaurant, addr:housenumber -> 11, cuisine -> italian, note -> closing in mid-Feb)
+Maison Bertaux -- 93.2178102450877 metres
+	Map(addr:housenumber -> 28, name -> Maison Bertaux, addr:street -> Greek Street, shop -> patisserie)
+Meard Street -- 93.65311814704481 metres
+	Map(name -> Meard Street, oneway -> no, highway -> service, service -> alley)
+Bateman Street -- 95.4893563512532 metres
+	Map(name -> Bateman Street, oneway -> yes, created_by -> JOSM, highway -> unclassified)
+The Three Greyhounds -- 95.49155991266474 metres
+	Map(name -> The Three Greyhounds, amenity -> pub)
+Maison Touareg -- 95.94819246707229 metres
+	Map(website -> http://www.maisontouareg.co.uk, name -> Maison Touareg, source -> Bing;photographic_survey;tags copied from node, addr:street -> Greek Street, amenity -> restaurant, addr:housenumber -> 23-24, building -> yes, cuisine -> moroccan;lebanese, postal_code -> W1D 4DZ)
+Coach and Horses -- 96.77579830744159 metres
+	Map(website -> coachandhorsessoho.co.uk, name -> Coach and Horses, diet:vegetarian -> only, addr:street -> Greek Street, addr:postcode -> W1D 5DH, amenity -> pub, addr:housenumber -> 29, phone -> 02074375920)
+Selva Food &amp; Wine -- 96.9560220001176 metres
+	Map(building -> yes, name -> Selva Food &amp; Wine, source -> Bing;photographic_survey, shop -> convenience)
+Bank of China -- 98.89733235937852 metres
+	Map(name -> Bank of China, amenity -> bank, atm -> no)
+Rodizio Preto -- 100.4977501095945 metres
+	Map(name -> Rodizio Preto, amenity -> restaurant)
+Golden Day -- 101.46020979683831 metres
+	Map(name -> Golden Day, amenity -> restaurant)
+Viet -- 101.68381513109118 metres
+	Map(name -> Viet, amenity -> restaurant)
+La Porchetta -- 101.69617489108796 metres
+	Map(name -> La Porchetta, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, postcode -> W1D 4TW, amenity -> restaurant, addr:housenumber -> 20, building -> yes, cuisine -> italian)
+Balans Restaurant -- 102.14987211659434 metres
+	Map(addr:housenumber -> 60-62, name -> Balans Restaurant, amenity -> restaurant, addr:street -> Old Compton Street)
+Tattoo13 -- 102.3369276677141 metres
+	Map(name -> Tattoo13, shop -> tattoo)
+David Clulow -- 102.46493028316509 metres
+	Map(building -> yes, name -> David Clulow, source -> Bing;photographic_survey, shop -> optician)
+Milkbar -- 102.67464062533257 metres
+	Map(name -> Milkbar, addr:street -> Bateman Street, addr:postcode -> W1D 4AG, amenity -> cafe, addr:housenumber -> 3)
+Comptons -- 102.9152569585784 metres
+	Map(name -> Comptons, gay -> yes, source -> Local knowledge, amenity -> pub)
+St Annes Church Grounds -- 103.6097057198481 metres
+	Map(leisure -> garden, name -> St Annes Church Grounds, opening_hours -> week 1-13 Mo-Su 10:00-16:00; week 14-43 10:00-18:00; week 44-52 10:00-16:00, wheelchair -> no)
+Greek Street -- 105.05640013609974 metres
+	Map(name -> Greek Street, oneway -> yes, highway -> unclassified, lcn -> yes)
+Crown &amp; 2 Chairmen -- 105.0969144040256 metres
+	Map(name -> Crown &amp; 2 Chairmen, amenity -> pub, wheelchair -> no)
+Crispins -- 105.21373312505054 metres
+	Map(name -> Crispins, shop -> convenience)
+Stanza -- 105.71202033227327 metres
+	Map(name -> Stanza, amenity -> restaurant)
+The Dog and Duck -- 106.01589178977376 metres
+	Map(name -> The Dog and Duck, amenity -> pub)
+Mr Topper's -- 106.82500679419597 metres
+	Map(name -> Mr Topper's, shop -> hairdresser)
+Dean Street  Chinatown -- 107.51798407610019 metres
+	Map(local_ref -> P, name -> Dean Street  Chinatown, highway -> bus_stop, naptan:Street -> SHAFTESBURY AVENUE, naptan:Indicator -> Stop P, naptan:AtcoCode -> 490016425WA, naptan:CommonName -> Dean Street  Chinatown, naptan:Bearing -> N, naptan:verified -> no)
+The Stockpot -- 108.89580474867967 metres
+	Map(area -> yes, name -> The Stockpot, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, amenity -> restaurant, addr:housenumber -> 18)
+Skola -- 108.97258327738257 metres
+	Map(name -> Skola, source -> Bing;photographic_survey, addr:street -> Old Compton Street, description -> English language school, building -> yes, level -> 1-)
+New World -- 109.84426185638642 metres
+	Map(name -> New World, amenity -> restaurant, cuisine -> chinese)
+De Hems Cafe Bar -- 110.4810014187314 metres
+	Map(name -> De Hems Cafe Bar, amenity -> pub)
+Nando's -- 110.97497429165952 metres
+	Map(name -> Nando's, amenity -> restaurant, cuisine -> chicken)
+Macclesfield Street -- 112.12892542370307 metres
+	Map(name -> Macclesfield Street, created_by -> JOSM, highway -> unclassified)
+Ristorante Cappuccetto -- 113.41844421448164 metres
+	Map(name -> Ristorante Cappuccetto, amenity -> restaurant, cuisine -> italian, telephone -> 02074372527)
+Bourchier Street -- 113.97646420011579 metres
+	Map(name -> Bourchier Street, postal_code -> W1, highway -> footway)
+Carlisle Arms -- 114.32110602518316 metres
+	Map(name -> Carlisle Arms, amenity -> pub)
+Bincho -- 115.15592708083476 metres
+	Map(website -> http://www.bincho.co.uk, name -> Bincho, source -> Bing;photographic_survey;tags copied from node, addr:street -> Old Compton Street, postcode -> W1D 4TL, amenity -> restaurant, addr:housenumber -> 16, building -> yes, cuisine -> japanese)
+Gerry's Wines &amp; Spirits -- 115.17844747998242 metres
+	Map(shop -> alcohol, area -> yes, name -> Gerry's Wines &amp; Spirits, building:levels -> 1, source -> photograph, addr:street -> Old Compton Street, addr:postcode -> W1D 4UW, contact:phone -> +44 20 77342053, addr:housenumber -> 74, opening_hours -> Mo-Th 09:00-18:30; Fr 09:00-19:30; Sa 09:00-18:30; Su 12:00-18:00, building -> yes, contact:website -> http://www.gerrys.uk.com, contact:email -> info@gerrys.uk.com, level -> 0)
+Soho, Moor Street -- 115.59971107508184 metres
+	Map(network -> Barclays Cycle Hire, construction -> yes, name -> Soho, Moor Street, amenity -> bicycle_rental, ref -> CH25044, capacity -> 17)
+Ed's -- 116.15302393152834 metres
+	Map(website -> http://www.edseasydiner.co.uk, name -> Ed's, source -> Bing;photographic_survey;tags copied from node, addr:street -> Moor Street, amenity -> restaurant, addr:housenumber -> 12, building -> yes, cuisine -> burger, postal_code -> W1D 5NG)
+Bateman Street -- 116.76533661050496 metres
+	Map(name -> Bateman Street, oneway -> yes, highway -> unclassified)
+Dean Street / Chinatown -- 118.36074590750111 metres
+	Map(name -> Dean Street / Chinatown, highway -> bus_stop)
+National House -- 118.36623062316461 metres
+	Map(name -> National House, source -> Bing;photographic_survey, addr:street -> Wardour Street, addr:country -> GB, addr:housenumber -> 60-66, building -> yes, addr:city -> London, addr:housename -> National House)
+Quo Vadis -- 118.75041240189708 metres
+	Map(addr:housenumber -> 26-29, name -> Quo Vadis, amenity -> restaurant, addr:street -> Dean Street)
+Horse and Dolphin Yard -- 119.69437772409289 metres
+	Map(created_by -> Potlatch 0.10f, name -> Horse and Dolphin Yard, highway -> service, name:zh -> ??¾?Ᏹ????, name:en -> Horse and Dolphin Yard)
+Dean Street -- 120.7352296799432 metres
+	Map(media:commons -> https://commons.wikimedia.org/wiki/Category:Dean_Street, name -> Dean Street, oneway -> yes, highway -> unclassified)
+Royalty Mews -- 121.10422046199906 metres
+	Map(name -> Royalty Mews, note -> This is an arcade, a covered shopping footway., highway -> footway, surface -> paved)
+Made in Italy -- 121.89834304304142 metres
+	Map(website -> http://www.madeinitalygroup.co.uk, area -> yes, name -> Made in Italy, source -> photograph;tags copied from node, addr:street -> Old Compton Street, postcode -> W1D 4TH, amenity -> restaurant, addr:housenumber -> 14, cuisine -> italian, level -> 0)
+Starbucks Coffee -- 122.7252613811783 metres
+	Map(area -> yes, name -> Starbucks Coffee, source -> photograph, amenity -> cafe, level -> 0)
+Cafe 54 -- 122.89480295368371 metres
+	Map(area -> yes, name -> Cafe 54, source -> photograph, addr:street -> Wardour Street, addr:country -> GB, amenity -> cafe, addr:housenumber -> 54, addr:city -> London, level -> 0)
+Greek Court -- 123.67199671128769 metres
+	Map(name -> Greek Court, highway -> footway)
+Rasa Sayang -- 123.77987681772781 metres
+	Map(name -> Rasa Sayang, amenity -> restaurant)
+The Spice of Life -- 123.79252638719936 metres
+	Map(website -> http://www.spiceoflifesoho.com/, name -> The Spice of Life, source -> Bing;photographic_survey, addr:street -> Moor Street, amenity -> pub, real_ale -> yes, addr:housenumber -> 6, building -> yes, postal_code -> W1D 5NA, phone -> 020 7437 7013)
+Satsuma -- 124.01118344950933 metres
+	Map(area -> yes, name -> Satsuma, source -> photograph, amenity -> restaurant, level -> 0)
+Romilly Street -- 124.1499172065218 metres
+	Map(name -> Romilly Street, oneway -> yes, highway -> unclassified)
+Freedom -- 125.52026505882039 metres
+	Map(website -> http://www.freedombarsoho.com, area -> yes, name -> Freedom, source -> photograph, amenity -> bar, level -> 0)
+Le Pain Quotidien -- 126.1460998754364 metres
+	Map(area -> yes, name -> Le Pain Quotidien, source -> photograph, amenity -> cafe, level -> 0)
+Gerrard Place -- 127.01784730727049 metres
+	Map(created_by -> JOSM, name -> Gerrard Place, highway -> unclassified, name:zh -> ?????????, name:en -> Gerrard Place)
+Lab -- 127.02980220114418 metres
+	Map(name -> Lab, building:levels -> 5, source -> Bing;photographic_survey, amenity -> bar, building -> yes)
+Soho, Wardour Street -- 128.0292080430181 metres
+	Map(network -> Barclays Cycle Hire, name -> Soho, Wardour Street, amenity -> bicycle_rental, ref -> CH25058, capacity -> 16)
+Vita Organic -- 129.99757971234388 metres
+	Map(name -> Vita Organic, amenity -> restaurant)
+Wardour Street -- 130.08177629924697 metres
+	Map(name -> Wardour Street, highway -> tertiary, cycleway -> opposite_lane, note -> lcn soho/covent garden signed south, though the contraflow now replaced with cycle hire construction, lcn -> yes, source:name -> local knowledge, oneway -> yes)
+Palace -- 130.68932134649071 metres
+	Map(website -> http://www.palace-theatre.co.uk, name -> Palace, addr:street -> Cambridge Circus, building:architecture -> victorian, amenity -> theatre, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Palace_Theatre,_London, postal_code -> W1D 8AY)
+NatWest -- 130.72850157539412 metres
+	Map(name -> NatWest, amenity -> bank, atm -> yes)
+Wardour Street -- 131.09800725752115 metres
+	Map(name -> Wardour Street, oneway -> -1, highway -> tertiary, source:name -> local knowledge)
+The Golden Oven -- 131.24673916029576 metres
+	Map(name -> The Golden Oven, amenity -> restaurant)
+Moor Street -- 133.4483947753525 metres
+	Map(name -> Moor Street, motor_vehicle -> no, highway -> unclassified, hour_off -> 06:00, bicycle -> yes, cycleway -> opposite, hour_on -> 18:00, oneway -> yes, fixme -> check the cycleways here, contraflow on Moor Street doesn't seem to lead anything sensible)
+Lab -- 133.8024219179908 metres
+	Map(website -> http://www.labbaruk.com/, name -> Lab, addr:street -> Old Compton Street, postcode -> W1D 4TQ, amenity -> bar, addr:housenumber -> 12)
+La Bodega Negra -- 133.86281478903535 metres
+	Map(website -> http://www.labodeganegra.com/, area -> yes, name -> La Bodega Negra, source -> photograph, amenity -> bar, postal_code -> W1D 6NH, level -> 0)
+Vitao -- 134.37605267085817 metres
+	Map(building -> yes, name -> Vitao, source -> Bing;photographic_survey)
+La Capanna -- 134.45769175439716 metres
+	Map(name -> La Capanna, amenity -> nightclub)
+Meard Street -- 134.83351196841951 metres
+	Map(name -> Meard Street, highway -> footway)
+The Friendly Society -- 135.6589398265224 metres
+	Map(name -> The Friendly Society, amenity -> bar)
+Pillars of Hercules -- 135.75034124477622 metres
+	Map(name -> Pillars of Hercules, toilets -> yes, amenity -> pub, toilets:access -> customers)
+Leong's Legend -- 136.5642304883439 metres
+	Map(name -> Leong's Legend, amenity -> restaurant)
+Wahaca -- 137.13953039558768 metres
+	Map(area -> yes, name -> Wahaca, source -> photograph, addr:street -> Wardour Street, amenity -> bar, addr:housenumber -> 80, postal_code -> W1F 0TF, phone -> 020 7734 0195, level -> 0)
+Macclesfield Street -- 137.49918439274165 metres
+	Map(name -> Macclesfield Street, created_by -> JOSM, highway -> pedestrian)
+Circa -- 138.82595547312883 metres
+	Map(name -> Circa, addr:street -> Frith Street, amenity -> bar, addr:housenumber -> 62, postal_code -> W1D 3JN, gay -> yes)
+Duke of Wellington -- 139.4021131262319 metres
+	Map(name -> Duke of Wellington, source -> Bing;photographic_survey;tags copied from node, addr:street -> Wardour Street, addr:country -> GB, amenity -> pub, contact:phone -> +44 20 7439 1274, addr:housenumber -> 94A, opening_hours -> Mo-Sa 11:00-23:00; Su 12:00-22:30, building -> yes, addr:city -> London, source:addr:housenumber -> http://www.flickr.com/photos/55935853@N00/2413144442, contact:email -> thedukew1@hotmail.co.uk, gay -> yes, wheelchair -> http://www.thedukew1.co.uk)
+Z Hotels -- 139.5808544391085 metres
+	Map(name -> Z Hotels, source -> Bing;photographic_survey, tourism -> hotel, building -> yes, level -> 1-3)
+Ann Summers -- 140.15142761043137 metres
+	Map(shop -> erotic, website -> http://www.annsummers.com, name -> Ann Summers, source -> Bing;photographic_survey;tags copied from node, addr:street -> Wardour Street, addr:housenumber -> 79, building -> yes, postal_code -> W1D 6QB)
+Taro -- 140.2748470752796 metres
+	Map(website -> http://www.tarorestaurants.co.uk, name -> Taro, addr:street -> Old Compton Street, amenity -> restaurant, addr:housenumber -> 10, cuisine -> japanese, phone -> 0207 439 2275)
+Wedgwood Mews -- 141.30240567254447 metres
+	Map(name -> Wedgwood Mews, tunnel -> yes, not:name -> Wedgewood Mews, highway -> residential)
+Village -- 143.20133619267276 metres
+	Map(website -> http://www.village-soho.co.uk, name -> Village, source -> Bing;photographic_survey;tags copied from node, addr:street -> Wardour Street, addr:country -> GB, amenity -> bar, addr:housenumber -> 81, building -> yes, postal_code -> W1D 6QD, gay -> yes)
+Shaftesbury Avenue -- 144.32180292815187 metres
+	Map(name -> Shaftesbury Avenue, maxspeed -> 30 mph, highway -> primary, note:lcn -> from soho to city/covent garden, I've no clue how one is intended to get to West Street, ref -> A401, lcn -> yes, postal_code -> WC2H 8DP, sidewalk -> both, oneway -> no)
+Shaftesbury Avenue -- 144.4622714132365 metres
+	Map(name -> Shaftesbury Avenue, maxspeed -> 30 mph, highway -> primary, ref -> A401, lit -> yes, postal_code -> WC2H 8DP, sidewalk -> both, oneway -> no)
+Wan Chai Corner -- 144.61787913572223 metres
+	Map(name -> Wan Chai Corner, amenity -> restaurant)
+Dansey Place -- 144.63678727602314 metres
+	Map(created_by -> JOSM, name -> Dansey Place, highway -> service, name:zh -> ??Ȍ?ǌ??, name:en -> Dansey Place, oneway -> yes)
+The O Bar -- 145.05786979443693 metres
+	Map(building -> yes, name -> The O Bar, source -> Bing;photographic_survey, amenity -> bar)
+Profile -- 145.75094669409336 metres
+	Map(website -> http://profilesoho.com/, area -> yes, name -> Profile, source -> photograph, addr:street -> Wardour Street, amenity -> bar, addr:housenumber -> 84-86, addr:city -> London, postal_code -> W1F 0TQ, gay -> yes, phone -> 0207 734 3444, level -> 0)
+Piccolo Diavolo -- 146.85492755569476 metres
+	Map(website -> http://www.piccolodiavolo.co.uk/, name -> Piccolo Diavolo, addr:street -> Old Compton Street, amenity -> restaurant, addr:housenumber -> 8, cuisine -> italian, postal_code -> W1D 4TE)
+The Cambridge -- 148.01627875630646 metres
+	Map(name -> The Cambridge, source -> Bing;photographic_survey, amenity -> pub, toilets:access -> customers, building -> yes, brand -> Nicholson's, toilets -> yes, wheelchair -> limited)
+The Carphone Warehouse -- 148.06033177492955 metres
+	Map(building -> yes, name -> The Carphone Warehouse, shop -> mobile_phone)
+Scotch Steak Houses -- 148.2416212621283 metres
+	Map(name -> Scotch Steak Houses, amenity -> restaurant)
+Hummus Bros -- 148.95425946918522 metres
+	Map(area -> yes, name -> Hummus Bros, source -> photograph, addr:street -> Wardour Street, amenity -> restaurant, addr:housenumber -> 88, opening_hours -> Mo-We 12:00-20:00; Th-Sa 12:00-23:00; Su 12:00-17:00, addr:city -> London, postal_code -> W1F 0TH, phone -> 020 7734 1311, level -> 0)
+Richmond Mews -- 150.11992092635305 metres
+	Map(name -> Richmond Mews, created_by -> JOSM, highway -> service)
+Tisbury Court -- 150.4031610260026 metres
+	Map(name -> Tisbury Court, created_by -> JOSM, highway -> footway)
+Winnett Street -- 151.9065223348141 metres
+	Map(name -> Winnett Street, created_by -> Potlatch alpha, highway -> residential)
+Gerrard Street -- 152.42730961803446 metres
+	Map(name -> Gerrard Street, name:en -> Gerrard Street, highway -> pedestrian, name:zh -> ?????????)
+Village -- 152.79177477012038 metres
+	Map(area -> yes, name -> Village, source -> photograph, note -> Bar?, level -> 0)
+Melanie -- 154.06570059784215 metres
+	Map(website -> http://www.melanieitalianrestaurant.co.uk/, name -> Melanie, addr:street -> Old Compton Street, amenity -> restaurant, addr:housenumber -> 4-6, cuisine -> italian, postal_code -> W1D 4TB, phone -> 020 7437 4006)
+Las Vegas -- 154.80203370455317 metres
+	Map(name -> Las Vegas, addr:street -> Wardour Street, addr:country -> GB, building -> yes, addr:city -> London, addr:housename -> Urbanora House)
+Molly Moggs -- 154.90841936600998 metres
+	Map(name -> Molly Moggs, source -> Bing;photographic_survey, addr:street -> Old Compton Street, postcode -> W1D 4TA, amenity -> pub, addr:housenumber -> 2, building -> yes, phone -> 020 7434 4294)
+Wedgwood Mews -- 155.71358358587946 metres
+	Map(name -> Wedgwood Mews, not:name -> Wedgewood Mews, highway -> residential)
+Chinatown -- 156.65144451731135 metres
+	Map(is_in -> London, UK, name -> Chinatown, wikipedia -> http://en.wikipedia.org/wiki/Chinatown_(London), place -> suburb)
+Harbour City Restaurant -- 156.904830173879 metres
+	Map(name -> Harbour City Restaurant, amenity -> restaurant)
+Queen's -- 156.98095471596056 metres
+	Map(website -> http://www.delfontmackintosh.co.uk/Theatres/queens_theatre.php, name -> Queen's, addr:street -> Shaftesbury Avenue, amenity -> theatre, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Queen%27s_Theatre, postal_code -> W1D 6BA)
+Chapone Place -- 157.82561932897045 metres
+	Map(name -> Chapone Place, source -> OS, highway -> unclassified)
+Friendly Inn -- 158.25888088485507 metres
+	Map(name -> Friendly Inn, amenity -> restaurant)
+Bateman's Buildings -- 160.95120312412848 metres
+	Map(name -> Bateman's Buildings, created_by -> JOSM, highway -> footway, source:name -> photograph)
+New China -- 162.60323297621926 metres
+	Map(name -> New China, amenity -> restaurant)
+Canton -- 165.59430297029925 metres
+	Map(name -> Canton, amenity -> restaurant, cuisine -> chinese)
+Soho Theatre -- 166.4805370649235 metres
+	Map(website -> http://www.sohotheatre.com, name -> Soho Theatre, addr:street -> Dean Street, amenity -> theatre, addr:housenumber -> 21, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Soho_Theatre, postal_code -> W1D 3NE)
+Prowler -- 167.46980086644984 metres
+	Map(shop -> erotic, website -> http://www.prowler.co.uk/, name -> Prowler, source -> Bing;photographic_survey, postcode -> W1F 0RF, building -> yes, gay -> yes)
+Cambridge Circus -- 169.95310242709496 metres
+	Map(name -> Cambridge Circus, randomjunk_bot -> reverted edit by FilipeOliveira on 2008-11-26T17:23:44+00:00, junction -> crossroads, highway -> traffic_signals)
+Rupert Street -- 170.04445477687239 metres
+	Map(name -> Rupert Street, amenity -> pub, postal_code -> W1D 6DR, gay -> yes, phone -> 020 7292 7141)
+Scotch Steak House -- 170.16471324686495 metres
+	Map(name -> Scotch Steak House, amenity -> restaurant)
+Richmond Buildings -- 170.82820163577563 metres
+	Map(name -> Richmond Buildings, created_by -> JOSM, highway -> service)
+China Buffet -- 171.2761606565555 metres
+	Map(name -> China Buffet, amenity -> restaurant, cuisine -> chinese)
+The Montagu Pyke -- 174.08227654548486 metres
+	Map(name -> The Montagu Pyke, amenity -> pub)
+Rupert Street -- 174.6429320647352 metres
+	Map(name -> Rupert Street, oneway -> yes, postal_code -> W1, highway -> pedestrian)
+Gielgud -- 176.6107513635644 metres
+	Map(website -> http://www.delfontmackintosh.co.uk/Theatres/gielgud_theatre.php, name -> Gielgud, addr:street -> Shaftesbury Avenue, amenity -> theatre, incorrect_name -> Gieldgud, building -> yes, wikipedia -> http://en.wikipedia.org/wiki/Gielgud_Theatre, postal_code -> W1D 6AR)
+Guanghwa -- 177.8294285343159 metres
+	Map(name -> Guanghwa, amenity -> restaurant, cuisine -> chinese)
+Newport Place -- 185.25185863343893 metres
+	Map(name -> Newport Place, highway -> unclassified, name:zh -> ?????????, name:en -> Newport Place, oneway -> yes)
+Charing Cross Road -- 188.2333949159237 metres
+	Map(name -> Charing Cross Road, bus -> opposite, source -> survey on 1st August 2007, lcn_ref -> 6a, highway -> primary, boundary -> administrative, foot -> yes, admin_level -> 8, bicycle -> yes, cycleway -> no, note -> the section around Hanway Street is almost certainly wrong.  Street signs around here were very confusing., right:district -> Camden, left:district -> Westminster, oneway -> yes)
+Rupert Street -- 188.44142793534593 metres
+	Map(name -> Rupert Street, oneway -> yes, highway -> unclassified)
+White Horse -- 191.5362870900117 metres
+	Map(name -> White Horse, amenity -> pub, created_by -> Potlatch 0.10f)
+Phoenix Street -- 215.04283098064553 metres
+	Map(name -> Phoenix Street, created_by -> JOSM, highway -> residential, source:name -> local knowledge)
+Newport Court -- 220.78282547887116 metres
+	Map(name -> Newport Court, name:en -> Newport Court, highway -> footway, name:zh -> ?????????)
+Wardour Street -- 241.73215168115397 metres
+	Map(name -> Wardour Street, oneway -> yes, highway -> tertiary, source:name -> local knowledge)
+Brewer Street -- 298.4116409129834 metres
+	Map(name -> Brewer Street, oneway -> yes, highway -> unclassified, lcn -> yes)
+Tottenham Court Road -- 321.97527846847123 metres
+	Map(network -> London Underground, name -> Tottenham Court Road, media:commons -> https://commons.wikimedia.org/wiki/Category:Tottenham_Court_Road_tube_station, line -> Central, railway -> station, odbl -> clean, wikipedia -> http://en.wikipedia.org/wiki/Tottenham_Court_Road_tube_station)
+Tottenham Court Road -- 326.7013999723801 metres
+	Map(network -> London Underground, name -> Tottenham Court Road, media:commons -> https://commons.wikimedia.org/wiki/Category:Tottenham_Court_Road_tube_station, line -> Central, railway -> station, odbl -> clean, wikipedia -> http://en.wikipedia.org/wiki/Tottenham_Court_Road_tube_station)
+Northern Line (Charing Cross Branch) Southbound -- 380.0730013784776 metres
+	Map(electrified -> rail, network -> London Underground, name -> Northern Line (Charing Cross Branch) Southbound, history -> Retrieved from v43, line -> Northern, branch -> Charing Cross, railway -> subway, layer -> -3, tunnel -> yes, gauge -> 1435, frequency -> 0, voltage -> 630)
+Northern Line (Charing Cross Branch) -- 477.3867872670135 metres
+	Map(electrified -> rail, network -> London Underground, name -> Northern Line (Charing Cross Branch), line -> Northern, branch -> Charing Cross, railway -> subway, layer -> -2, tunnel -> yes, gauge -> 1435, frequency -> 0, voltage -> 630)
+Goodge Street -- 848.8319350765069 metres
+	Map(name -> Goodge Street, network -> London Underground, railway -> station, line -> Northern)
+Goodge Street -- 850.9535343259219 metres
+	Map(name -> Goodge Street, network -> London Underground, railway -> station, line -> Northern)
+Warren Street -- 1350.808536131847 metres
+	Map(network -> London Underground, name -> Warren Street, line -> Northern, Victoria, railway -> station, wheelchair -> no)
+Waterloo -- 1597.9588959698094 metres
+	Map(network -> London Underground, name -> Waterloo, line -> Northern, railway -> station, layer -> -2)
+Mornington Crescent -- 2388.5040112375946 metres
+	Map(name -> Mornington Crescent, network -> London Underground, railway -> station, line -> Northern)
