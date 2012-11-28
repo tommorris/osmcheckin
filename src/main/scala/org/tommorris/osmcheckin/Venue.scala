@@ -17,6 +17,8 @@ class Venue(obj: Node, context: Node) {
   def hasTag(tag: String) = tags.contains(tag)
   
   def location(): (Double, Double) = (obj.attribute("lat").get.first.text.toDouble, obj.attribute("lon").get.first.text.toDouble)
+
+  def name(): String = tags.get("name").get
   
   // returns distance in metres
   def distanceFrom(lat: Double, long: Double) = {
@@ -24,12 +26,47 @@ class Venue(obj: Node, context: Node) {
     val here = new Point(new DegreeCoordinate(location._1), new DegreeCoordinate(location._2))
     EarthCalc.getDistance(here, there)
   }
+
+  def wikipedia(): Option[String] = {
+    tags.get("wikipedia") match {
+      case Some(x) if x.startsWith("http") => Some(x)
+      case Some(x) =>
+        val split = x.split(":")
+        val url = "https://" + split.head + ".wikipedia.org/wiki/" + split.tail.mkString(":").replace(" ", "_")
+        Some(url)
+      case _ => None
+    }
+  }
   
   def toHtml: scala.xml.Elem = {
     <div class="h-card">
       { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
-      { }
+      { if (hasTag("website")) <div><a class="p-url" href={ tags("website") }>Website</a></div> }
+      { if (hasTag("wikipedia")) <div><a class="p-url" href={ wikipedia().get  }>Wikipedia</a></div> }
     </div>
+  }
+
+  def url(): String = {
+    "http://openstreetmap.org/" + obj.label + "/" + obj.attribute("id").get.toString
+  }
+
+  def venueType(): String = {
+    tags.get("amenity") match {
+      case Some("pub") => "pub"
+      case Some("bar") =>
+        tags.get("gay") match {
+          case Some(_) => "gay bar"
+          case None => "bar"
+        }
+      case Some("restaurant") =>
+        tags.get("cuisine") match {
+          case Some(x: String) => x + " restaurant"
+          case None => "restaurant"
+        }
+      case Some("cafe") => "cafe"
+      case Some("library") => "library"
+      case _ => ""
+    }
   }
 }
 object Venue {
