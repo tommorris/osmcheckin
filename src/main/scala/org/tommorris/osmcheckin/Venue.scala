@@ -76,6 +76,19 @@ class Venue(obj: Node, context: Node) {
         }
       case Some("cafe") => "cafe"
       case Some("library") => "library"
+      case Some("place_of_worship") =>
+        tags.get("religion") match {
+          case Some("christian") =>
+            tags.get("denomination") match {
+              case Some(x: String) => x + " church"
+              case None => "church"
+            }
+          case Some("jewish") => "synagogue"
+          case Some("islam") => "mosque"
+          case Some("buddhism") => "Buddhist temple"
+          case Some(x: String) => x + " place of worship"
+          case None => "place of worship"
+        }
       case Some(x) => x
       case _ => ""
     }
