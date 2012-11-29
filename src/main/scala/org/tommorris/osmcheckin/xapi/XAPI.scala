@@ -24,6 +24,7 @@ object XAPI {
     (results \ "_").filter {elem => (elem.label == "node" || elem.label == "way") }.
       map(Venue(_, results)).
       filter(_.tags.contains("name")).
+      filter(x => Venue.filterVenue(x)).
       sortBy(_.distanceFrom(lat, long))
   }
   

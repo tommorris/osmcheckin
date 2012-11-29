@@ -85,6 +85,14 @@ object Venue {
   def apply(obj: scala.xml.Node, context: scala.xml.Node) = {
     if (obj.label == "way") { new VenueWay(obj, context) } else { new Venue(obj, context) }
   }
+
+  def filterVenue(v: Venue) = {
+    List(
+      if (v.hasTag("amenity")) true else false,
+      if (v.hasTag("tourism")) true else false,
+      if (v.hasTag("shop")) true else false
+    ).contains(true)
+  }
 }
 
 class VenueWay(obj: scala.xml.Node, context:scala.xml.Node) extends Venue(obj, context) {
