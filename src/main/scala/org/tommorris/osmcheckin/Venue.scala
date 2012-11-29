@@ -100,11 +100,14 @@ object Venue {
   }
 
   def filterVenue(v: Venue) = {
-    List(
-      if (v.hasTag("amenity")) true else false,
-      if (v.hasTag("tourism")) true else false,
-      if (v.hasTag("shop")) true else false
-    ).contains(true)
+    // postive filters
+    (v.hasTag("amenity") ||
+      v.hasTag("tourism") ||
+      v.hasTag("shop")) &&
+    // negative filters
+    !(
+     (v.hasTag("amenity") && v.tags("amenity") == "bicycle_hire")
+    )
   }
 }
 
