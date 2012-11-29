@@ -52,6 +52,7 @@ class VenueSpec extends Specification {
   }
 
   "it should format Wikipedia URLs" should {
+    venBar.wikipedia() must beEqualTo(None)
     venRestaurant.wikipedia() must beEqualTo(Some("https://en.wikipedia.org/wiki/Example_Restaurant"))
   }
 }

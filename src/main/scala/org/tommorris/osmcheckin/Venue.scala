@@ -39,8 +39,18 @@ class Venue(obj: Node, context: Node) {
   }
   
   def toHtml: scala.xml.Elem = {
+    /* TODO:
+      - address
+      - phone/fax
+      - geolocation
+      - venue features:
+        - wheelchair accessible
+        - toilets
+        - wifi
+    */
     <div class="h-card">
       { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
+      { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
       { if (hasTag("website")) <div><a class="p-url" href={ tags("website") }>Website</a></div> }
       { if (hasTag("wikipedia")) <div><a class="p-url" href={ wikipedia().get  }>Wikipedia</a></div> }
     </div>
@@ -54,6 +64,7 @@ class Venue(obj: Node, context: Node) {
     tags.get("amenity") match {
       case Some("pub") => "pub"
       case Some("bar") =>
+        // TODO: add sports bar and other types of bar
         tags.get("gay") match {
           case Some(_) => "gay bar"
           case None => "bar"
@@ -65,6 +76,7 @@ class Venue(obj: Node, context: Node) {
         }
       case Some("cafe") => "cafe"
       case Some("library") => "library"
+      case Some(x) => x
       case _ => ""
     }
   }
