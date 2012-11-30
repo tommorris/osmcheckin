@@ -48,7 +48,7 @@ object XAPI {
           call(lat, long, distance.tail)
       }
     }
-    val distances = List(100, 300, 1000, 3000)
+    val distances = List(50, 100, 300, 1000, 3000)
     call(lat, long, distances)
   }
   

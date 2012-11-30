@@ -6,16 +6,12 @@ import org.tommorris.osmcheckin.xapi.XAPI
 
 class OSMCheckinServlet extends ScalatraServlet with ScalateSupport {
     get("/") {
-        <html>
-          <head><title>Hello world</title></head>
-          <body>
-            <div></div>
-          </body>
-        </html>
+        contentType="text/html"
+        ssp("/index")
     }
 
     get("/lookup") {
-        val venues = XAPI.namedObjectsNear(params("lat").toDouble, params("long").toDouble, 100)
+        val venues = XAPI.namedObjectsNear(params("lat").toDouble, params("long").toDouble)
         <html>
           <head><title>Lookup</title>
           </head>
