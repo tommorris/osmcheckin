@@ -1,0 +1,13 @@
+The code is structured very simply:
+
+The <code>XAPI</code> object calls the XAPI API. There are a variety of XAPI
+endpoints, we are using the Overpass API.
+
+The <code>XAPI</code> object calls the <code>Venue</code> object's
+<code>apply</code> method as a constructor which returns either
+<code>Venue</code> objects or the subclass <code>VenueWay</code>
+
+The servlet class serves the data up to the human using Scalatra.
+
+We are using SSP for formatting because I don't like HAML/Jade-style
+templating.
