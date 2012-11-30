@@ -27,6 +27,15 @@ object XAPI {
       filter(x => Venue.filterVenue(x)).
       sortBy(_.distanceFrom(lat, long))
   }
+
+  def namedObjectsNear(lat: Double, long: Double): Seq[Venue] = {
+    def call(lat: Double, long: Double, distance: List[Int]): Seq[Venue] = {
+      val res = XAPI.namedObjectsNear(lat, long, distance.head)
+      if (res.size > 20) res else call(lat, long, distance.tail)
+    }
+    val searchSizeList = List(100, 300, 1000, 3000)
+    call(lat, long, searchSizeList)
+  }
   
   /**
    * @param lat Latitude (WGS84)
