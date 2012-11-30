@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>OpenCheckin</title>
+  </head>
+  <body style="margin-left: 10%; margin-right: 10%; font-family: Helvetica">
+    <h1>OpenCheckin</h1>
+    <p>OpenCheckin is a project to use data from <a href="http://openstreetmap.org">OpenStreetMap</a> to allow people to "check in" to venues on their own site. Why would you want to do that? Because <em>you can own your own data</em>. Checking into your own site means you control that data, you control the URLs, that data won't be hijacked, "sunsetted", deleted, lost, "pivoted" or any other Silicon Valley nonsense.</p>
+
+    <section style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px; padding-top: 10px; border: 1px solid gray;">
+      <h2>Try it out!</h2>
+      <form action="lookup" method="get">
+        <div style="float: left">
+          <label>Latitude</label><br />
+          <input type="text" name="lat" />
+        </div>
+        <div style="float: left">
+          <label>Longitude</label><br />
+          <input type="text" name="long" />
+       </div> 
+       <br style="clear: both"/>
+       <input type="submit" value="Go, gadget, go!" />
+      </form>
+    </section>
+
+    <footer>
+      <p>Built by <a href="http://tommorris.org">Tom Morris</a>.</p>
+    </footer>
+  </body>
+</html>
