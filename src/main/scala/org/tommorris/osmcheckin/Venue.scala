@@ -90,6 +90,8 @@ class Venue(obj: Node, context: Node) {
         }
       case Some("restaurant") =>
         tags.get("cuisine") match {
+          case Some("chinese") => "Chinese restaurant"
+          case Some("vietnamese") => "Vietnamese restaurant"
           case Some(x: String) => x + " restaurant"
           case None => "restaurant"
         }
@@ -99,6 +101,7 @@ class Venue(obj: Node, context: Node) {
         tags.get("religion") match {
           case Some("christian") =>
             tags.get("denomination") match {
+              case Some("church_of_england") => "Church of England church"
               case Some(x: String) => x + " church"
               case None => "church"
             }
@@ -127,7 +130,7 @@ object Venue {
       v.hasTag("shop")) &&
     // negative filters
     !(
-     (v.hasTag("amenity") && v.tags("amenity") == "bicycle_hire")
+     (v.hasTag("amenity") && v.tags("amenity") == "bicycle_rental")
     )
   }
 }
