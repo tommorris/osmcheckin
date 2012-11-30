@@ -2,10 +2,19 @@ package org.tommorris.osmcheckin
 
 import scala.xml._
 
+/** Venue represents a specific named place that one may wish to check in to.
+* 
+* The Venue class represents simple nodes.
+* 
+* Calling <code>Venue.apply</code> (or just <code>Venue(xml)</code>)
+* will return either a <code>Venue</code> or a more specific <code>VenueWay</code>
+* subclass if appropriate.
+*/
 class Venue(obj: Node, context: Node) {
   import scala.collection.mutable.{Map => MutableMap}
   import com.grum.geocalc._
   
+  /** Provides Map of key-value String pairs, mirrors OSM tags. */
   val tags: Map[String, String] = {
     val keymap = MutableMap[String, String]()
     (obj \ "tag").foreach {tag =>
@@ -14,19 +23,26 @@ class Venue(obj: Node, context: Node) {
     keymap.toMap
   }
   
+  /** Checks to see if venue has specific tag. */
   def hasTag(tag: String) = tags.contains(tag)
   
+  /** Returns tuple of latitude, longitude of venue object. */
   def location(): (Double, Double) = (obj.attribute("lat").get.first.text.toDouble, obj.attribute("lon").get.first.text.toDouble)
 
+  /** Value of the name tag. */
   def name(): String = tags.get("name").get
   
-  // returns distance in metres
+  /** Calculates distance from lat, long point in metres. */
   def distanceFrom(lat: Double, long: Double) = {
     val there = new Point(new DegreeCoordinate(lat), new DegreeCoordinate(long))
     val here = new Point(new DegreeCoordinate(location._1), new DegreeCoordinate(location._2))
     EarthCalc.getDistance(here, there)
   }
 
+  /** Formats Wikipedia URL.
+   * 
+   * Returns None if not available.
+   */
   def wikipedia(): Option[String] = {
     tags.get("wikipedia") match {
       case Some(x) if x.startsWith("http") => Some(x)
@@ -38,6 +54,7 @@ class Venue(obj: Node, context: Node) {
     }
   }
   
+  /** Provides HTML with hCard representing venue. */
   def toHtml: scala.xml.Elem = {
     /* TODO:
       - address
@@ -56,10 +73,12 @@ class Venue(obj: Node, context: Node) {
     </div>
   }
 
+  /** URL of the OpenStreetMap object (node, way etc.) */
   def url(): String = {
     "http://openstreetmap.org/" + obj.label + "/" + obj.attribute("id").get.toString
   }
 
+  /** Provides string description of venue (e.g. "pub", "Italian restaurant"). */
   def venueType(): String = {
     tags.get("amenity") match {
       case Some("pub") => "pub"
@@ -99,6 +118,8 @@ object Venue {
     if (obj.label == "way") { new VenueWay(obj, context) } else { new Venue(obj, context) }
   }
 
+  /** Predicate filter for venues.
+    * Returns true if it is a valid venue, false if not. */
   def filterVenue(v: Venue) = {
     // postive filters
     (v.hasTag("amenity") ||
@@ -111,11 +132,14 @@ object Venue {
   }
 }
 
+/** VenueWays are venues that are represented as ways rather than nodes.. */
 class VenueWay(obj: scala.xml.Node, context:scala.xml.Node) extends Venue(obj, context) {
+  /** Returns a collection of all the nodes that make up the way. */
   def nodes() = (obj \ "nd").map {node =>
       (context \ "node").find { _.attribute("id") == node.attribute("ref") }.get
     }
   
+  /** Calculates centroid location of a closed way object using simple mean. */
   override def location() = {
     val latitude = nodes().foldLeft(0.toDouble)((a, b) => a + b.attribute("lat").get.first.text.toDouble) / nodes.size
     val longitude = nodes().foldLeft(0.toDouble)((a, b) => a + b.attribute("lon").get.first.text.toDouble) / nodes.size

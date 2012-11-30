@@ -7,7 +7,14 @@ object XAPI {
   import com.grum.geocalc._
   private val endpoint = "http://www.overpass-api.de/api/xapi?"
   
-  // XAPI.namedObjectsNear(51.5130785, -0.1315878, 500)
+  /** Finds named objects within <code>distance</code> metres of the specified location.
+   * 
+   * Example:
+   * 
+   * <code>XAPI.namedObjectsNear(51.5130785, -0.1315878, 500)</code>
+   * 
+   * Will find venues within 500 metres of Old Compton Street, Soho, London.
+   */
   def namedObjectsNear(lat: Double, long: Double, distance: Int) = {
     val bbox = XAPI.boundingBoxAround(lat, long, distance)
     val bbox_desc = List(
@@ -28,10 +35,11 @@ object XAPI {
       sortBy(_.distanceFrom(lat, long))
   }
 
+  /** Recursively calls API until it returns at least 30 venues. */
   def namedObjectsNear(lat: Double, long: Double): Seq[Venue] = {
     def call(lat: Double, long: Double, distance: List[Int]): Seq[Venue] = {
       val res = XAPI.namedObjectsNear(lat, long, distance.head)
-      if (res.size > 20)
+      if (res.size > 30)
         res
       else {
         if (distance.tail.size == 0)
