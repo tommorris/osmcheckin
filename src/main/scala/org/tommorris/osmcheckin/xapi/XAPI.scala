@@ -28,11 +28,15 @@ object XAPI {
     println(query.mkString)
     val resp = Http(url(endpoint + query.mkString) OK as.xml.Elem)
     val results = resp()
-    (results \ "_").filter {elem => (elem.label == "node" || elem.label == "way") }.
-      map(Venue(_, results)).
+    val resultsFiltered = (results \ "_").filter {elem => (elem.label == "node" || elem.label == "way") }.
+      map(Venue(_, results, lat, long)).
       filter(_.tags.contains("name")).
       filter(x => Venue.filterVenue(x)).
       sortBy(_.distanceFrom(lat, long))
+
+    //resultsFiltered.foreach(x => x.distanceFromSearch = Some(x.distanceFrom(lat, long)))
+
+    resultsFiltered
   }
 
   /** Recursively calls API until it returns at least 30 venues. */
@@ -48,7 +52,7 @@ object XAPI {
           call(lat, long, distance.tail)
       }
     }
-    val distances = List(50, 100, 300, 1000, 3000)
+    val distances = List(50, 100, 300, 1000, 3000, 10000)
     call(lat, long, distances)
   }
   
