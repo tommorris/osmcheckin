@@ -55,7 +55,7 @@
     </section>
 
     <footer>
-      <p>Built by <a href="http://tommorris.org">Tom Morris</a>.</p>
+      <p>Built by <a href="http://tommorris.org">Tom Morris</a>. <a href="https://github.com/tommorris/osmcheckin">Github</a>.</p>
     </footer>
   </body>
 </html>

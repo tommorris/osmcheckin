@@ -8,5 +8,8 @@
   <body>
     <%@ val venues: scala.xml.Elem %>
     <%= venues %>
+
+    <p>Problems? <a href="https://github.com/tommorris/osmcheckin/issues">Report issues</a>.<br />
+       Venues missing? Add them to <a href="http://openstreetmap.org/">OpenStreetMap</a>.</p>
   </body>
 </html>
