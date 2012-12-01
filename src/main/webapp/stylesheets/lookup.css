@@ -48,3 +48,8 @@ div.icons {
 div.icons a {
         border: 0;
 }
+
+.h-adr {
+        color: #333;
+        font-style: italic;
+}

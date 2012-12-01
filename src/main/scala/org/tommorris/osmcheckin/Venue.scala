@@ -57,10 +57,12 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
   }
 
   def addressHtml: Option[scala.xml.Elem] = {
-    if (hasTag("addr:housenumber") && hasTag("addr:street"))
+    if (hasTag("addr:street"))
       Some(
       <div class="h-adr p-street-address">
-        <span class="p-street-address">{ tags("addr:housenumber") }, { tags("addr:street") }</span>
+        <span class="p-street-address">{ if (hasTag("addr:housenumber")) tags("addr:housenumber") } { tags("addr:street") }</span>
+        { if (hasTag("addr:city")) <div class="p-locality">{ tags("addr:city") }</div> }
+        { if (hasTag("postal_code")) <div class="p-postal-code">{ tags("postal_code") }</div> }
       </div>
       )
     else
@@ -87,7 +89,7 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
         <a href={url}><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/30px-Openstreetmap_logo.svg.png" /></a>
       </div>
       { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
-      { for (addr <- addressHtml) addr }
+      { if (addressHtml.isDefined) addressHtml.get }
       <div class="distance">{ "%.1f".format(distanceFromSearch).replaceFirst("""\.0$""", "") }m away</div>
     </div>
   }
