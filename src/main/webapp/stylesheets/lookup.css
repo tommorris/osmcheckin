@@ -1,0 +1,37 @@
+body {
+	margin-left: 5%;
+	margin-right: 10%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+ol {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+ol > li {
+	padding: 0;
+	display: block;
+}
+
+ol > li > div {
+	
+	border-bottom: 1px solid #bebebe;
+	padding: 15px;
+}
+
+.h-card div {
+	padding: 1px;
+}
+
+div .p-name {
+	font-weight: bold;
+}
+
+.p-x-venue-type {
+	font-variant: small-caps;
+	color: #949494;
+}
+
+a {
+	color: #7e7e7e;
+}

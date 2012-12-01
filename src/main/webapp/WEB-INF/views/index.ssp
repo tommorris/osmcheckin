@@ -3,6 +3,28 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>OpenCheckin</title>
+    <script type="text/javascript">
+      function setFormCoords(lat, lon) {
+        document.getElementById("lat").value = lat;
+        document.getElementById("long").value = lon;
+      }
+      window.onload = function() {
+        var examples = document.getElementById("examples").getElementsByTagName("a");
+        for (var i = 0; i < examples.length; i++) {
+          var example = examples[i];
+          example.onclick = function(ex) {
+            setFormCoords(ex.target.getAttribute("data-lat"), ex.target.getAttribute("data-long"));
+            return false;
+          };
+        }
+        document.getElementById("geolocate").onclick = function() {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            setFormCoords(position.coords.latitude.toString(), position.coords.longitude.toString());
+          });
+          return false;
+        }
+      };
+    </script>
   </head>
   <body style="margin-left: 10%; margin-right: 10%; font-family: Helvetica">
     <h1>OpenCheckin</h1>
@@ -13,15 +35,23 @@
       <form action="lookup" method="get">
         <div style="float: left">
           <label>Latitude</label><br />
-          <input type="text" name="lat" />
+          <input type="text" name="lat" id="lat" />
         </div>
         <div style="float: left">
           <label>Longitude</label><br />
-          <input type="text" name="long" />
+          <input type="text" name="long" id="long" />
        </div> 
        <br style="clear: both"/>
        <input type="submit" value="Go, gadget, go!" />
       </form>
+      <p>
+        <a href="#" id="geolocate">Geolocate me.</a><br /><br />
+        or use one of the test examples:
+        <ul id="examples">
+          <li><a data-lat="51.513" data-long="-0.131" href="#">Soho, London</a></li>
+          <li><a data-lat="50.823087" data-long="-0.14109" href="#">North Street, Brighton</a></li>
+        </ul>
+      </p>
     </section>
 
     <footer>
