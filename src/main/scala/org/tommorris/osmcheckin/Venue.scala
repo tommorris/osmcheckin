@@ -10,9 +10,11 @@ import scala.xml._
 * will return either a <code>Venue</code> or a more specific <code>VenueWay</code>
 * subclass if appropriate.
 */
-class Venue(obj: Node, context: Node) {
+class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
   import scala.collection.mutable.{Map => MutableMap}
   import com.grum.geocalc._
+
+  val distanceFromSearch: Double = distanceFrom(srcLat, srcLong)
   
   /** Provides Map of key-value String pairs, mirrors OSM tags. */
   val tags: Map[String, String] = {
@@ -53,9 +55,21 @@ class Venue(obj: Node, context: Node) {
       case _ => None
     }
   }
+
+  def addressHtml: Option[scala.xml.Elem] = {
+    if (hasTag("addr:housenumber") && hasTag("addr:street"))
+      Some(
+      <div class="h-adr p-street-address">
+        <span class="p-street-address">{ tags("addr:housenumber") }, { tags("addr:street") }</span>
+      </div>
+      )
+    else
+      None
+  }
   
   /** Provides HTML with hCard representing venue. */
   def toHtml: scala.xml.Elem = {
+    import scala.xml.Utility._
     /* TODO:
       - address
       - phone/fax
@@ -66,10 +80,12 @@ class Venue(obj: Node, context: Node) {
         - wifi
     */
     <div class="h-card">
-      { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
+      { if (hasTag("name")) <div class="p-name">{ scala.xml.Unparsed(tags("name")) }</div> else None }
       { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
+      { for (addr <- addressHtml) addr }
       { if (hasTag("website")) <div><a class="p-url" href={ tags("website") }>Website</a></div> }
       { if (hasTag("wikipedia")) <div><a class="p-url" href={ wikipedia().get  }>Wikipedia</a></div> }
+      <div class="distance">{ "%.1f".format(distanceFromSearch).replaceFirst("""\.0$""", "") }m away</div>
     </div>
   }
 
@@ -117,8 +133,8 @@ class Venue(obj: Node, context: Node) {
   }
 }
 object Venue {
-  def apply(obj: scala.xml.Node, context: scala.xml.Node) = {
-    if (obj.label == "way") { new VenueWay(obj, context) } else { new Venue(obj, context) }
+  def apply(obj: scala.xml.Node, context: scala.xml.Node, srcLat: Double, srcLong: Double) = {
+    if (obj.label == "way") { new VenueWay(obj, context, srcLat, srcLong) } else { new Venue(obj, context, srcLat, srcLong) }
   }
 
   /** Predicate filter for venues.
@@ -136,7 +152,7 @@ object Venue {
 }
 
 /** VenueWays are venues that are represented as ways rather than nodes.. */
-class VenueWay(obj: scala.xml.Node, context:scala.xml.Node) extends Venue(obj, context) {
+class VenueWay(obj: scala.xml.Node, context:scala.xml.Node, srcLat: Double, srcLong: Double) extends Venue(obj, context, srcLat, srcLong) {
   /** Returns a collection of all the nodes that make up the way. */
   def nodes() = (obj \ "nd").map {node =>
       (context \ "node").find { _.attribute("id") == node.attribute("ref") }.get

@@ -11,16 +11,9 @@ class OSMCheckinServlet extends ScalatraServlet with ScalateSupport {
     }
 
     get("/lookup") {
+        contentType="text/html"
         val venues = XAPI.namedObjectsNear(params("lat").toDouble, params("long").toDouble)
-        <html>
-          <head><title>Lookup</title>
-          </head>
-          <body>
-            <ol>
-              { venues.map(venue => <li>{venue.toHtml}</li>) }
-            </ol>
-          </body>
-        </html>
+        ssp("/lookup", "venues" -> <ol> { venues.map(v => <li>{v.toHtml}</li>) } </ol>)
     }
 }
 
