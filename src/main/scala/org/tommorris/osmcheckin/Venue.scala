@@ -80,18 +80,21 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
         - wifi
     */
     <div class="h-card">
-      { if (hasTag("name")) <div class="p-name">{ scala.xml.Unparsed(tags("name")) }</div> else None }
+      { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
+      <div class="icons">
+        { if (hasTag("wikipedia")) <a class="p-url" href={ wikipedia().get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tango_style_Wikipedia_Icon.svg/30px-Tango_style_Wikipedia_Icon.svg.png" /></a> }
+        { if (hasTag("website")) <a class="p-url" href={ tags("website") }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/30px-Internet-web-browser.svg.png" /></a> }
+        <a href={url}><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/30px-Openstreetmap_logo.svg.png" /></a>
+      </div>
       { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
       { for (addr <- addressHtml) addr }
-      { if (hasTag("website")) <div><a class="p-url" href={ tags("website") }>Website</a></div> }
-      { if (hasTag("wikipedia")) <div><a class="p-url" href={ wikipedia().get  }>Wikipedia</a></div> }
       <div class="distance">{ "%.1f".format(distanceFromSearch).replaceFirst("""\.0$""", "") }m away</div>
     </div>
   }
 
   /** URL of the OpenStreetMap object (node, way etc.) */
   def url(): String = {
-    "http://openstreetmap.org/" + obj.label + "/" + obj.attribute("id").get.toString
+    "http://openstreetmap.org/browse/" + obj.label + "/" + obj.attribute("id").get.toString
   }
 
   /** Provides string description of venue (e.g. "pub", "Italian restaurant"). */
@@ -108,7 +111,7 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
         tags.get("cuisine") match {
           case Some("chinese") => "Chinese restaurant"
           case Some("vietnamese") => "Vietnamese restaurant"
-          case Some(x: String) => x + " restaurant"
+          case Some(x: String) => x.replaceAll(";", "/") + " restaurant"
           case None => "restaurant"
         }
       case Some("cafe") => "cafe"
