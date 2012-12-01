@@ -68,6 +68,15 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
     else
       None
   }
+
+  def website: Option[String] = {
+    if (hasTag("website")) {
+      if (tags("website").startsWith("http://") || tags("website").startsWith("https://"))
+        Some(tags("website"))
+      else
+        Some("http://" + tags("website"))
+    } else None
+  }
   
   /** Provides HTML with hCard representing venue. */
   def toHtml: scala.xml.Elem = {
@@ -85,7 +94,7 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
       { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
       <div class="icons">
         { if (hasTag("wikipedia")) <a class="p-url" href={ wikipedia().get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tango_style_Wikipedia_Icon.svg/30px-Tango_style_Wikipedia_Icon.svg.png" /></a> }
-        { if (hasTag("website")) <a class="p-url" href={ tags("website") }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/30px-Internet-web-browser.svg.png" /></a> }
+        { if (website.isDefined) <a class="p-url" href={ website.get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/30px-Internet-web-browser.svg.png" /></a> }
         <a href={url}><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/30px-Openstreetmap_logo.svg.png" /></a>
       </div>
       { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
