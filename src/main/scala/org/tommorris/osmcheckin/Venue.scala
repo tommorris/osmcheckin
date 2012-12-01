@@ -20,7 +20,7 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
   val tags: Map[String, String] = {
     val keymap = MutableMap[String, String]()
     (obj \ "tag").foreach {tag =>
-      keymap.put(tag.attribute("k").get.toString, tag.attribute("v").get.toString)
+      keymap.put(tag.attribute("k").get.toString, org.apache.commons.lang3.StringEscapeUtils.unescapeHtml4(tag.attribute("v").get.toString))
     }
     keymap.toMap
   }
