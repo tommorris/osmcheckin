@@ -90,14 +90,14 @@ class Venue(obj: Node, context: Node, srcLat: Double, srcLong: Double) {
         - toilets
         - wifi
     */
-    <div class="h-card">
-      { if (hasTag("name")) <div class="p-name">{ tags("name") }</div> else None }
+    <div class="h-card vcard">
+      { if (hasTag("name")) <div class="p-name fn">{ tags("name") }</div> else None }
       <div class="icons">
-        { if (hasTag("wikipedia")) <a class="p-url" href={ wikipedia().get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tango_style_Wikipedia_Icon.svg/30px-Tango_style_Wikipedia_Icon.svg.png" /></a> }
-        { if (website.isDefined) <a class="p-url" href={ website.get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/30px-Internet-web-browser.svg.png" /></a> }
+        { if (hasTag("wikipedia")) <a class="u-url url" href={ wikipedia().get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tango_style_Wikipedia_Icon.svg/30px-Tango_style_Wikipedia_Icon.svg.png" /></a> }
+        { if (website.isDefined) <a class="u-url url" href={ website.get }><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/30px-Internet-web-browser.svg.png" /></a> }
         <a href={url}><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/30px-Openstreetmap_logo.svg.png" /></a>
       </div>
-      { if (venueType() != "") <div class="p-x-venue-type">{ venueType() }</div> }
+      { if (venueType() != "") <div class="p-category category p-x-venue-type">{ venueType() }</div> }
       { if (addressHtml.isDefined) addressHtml.get }
       <div class="distance">{ "%.1f".format(distanceFromSearch).replaceFirst("""\.0$""", "") }m away</div>
     </div>
